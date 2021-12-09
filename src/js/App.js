@@ -6,7 +6,7 @@ const App = () => {
             <h1>
                 Hello from APP
             </h1>
-            <button>Testing</button>
+            <button onClick={() => { electron.notificationApi.sendNotification("this is the msg") }}>Testing</button>
         </div>
 
     )
